@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #00155b;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#f9fdf9;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: repeat(7,80px);
+    grid-template-areas: "display display display display"
+                          "display display display display"
+                          "clear clear me mi"
+                          "seven eight nine menos"
+                          "four five six more"
+                          "one two tre more"
+                          "zero ceroz punto equal";
+                          
+    grid-gap: 2px;
+    box-shadow: -40px 40px 20px rgba(0, 0, 0, 0.5);
+}
+.inputTxt{
+    grid-area: display;
+    font-size: 2em;
+    padding: 10px;
+    outline: none;
+    text-align: right;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.menos{
+    grid-area: menos;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.zero{
+    grid-area: zero;
+}
+.ceroz{
+    grid-area: ceroz;
+}
+.punto{
+    grid-area: punto;
+}
+.equal{
+    grid-area: equal;
+    background-color: #70b7e3;
+    cursor: pointer;
+}
+.equal:hover{
+    background-color: #7eceff;
+}
+.more{
+    grid-area: more;
+}
+.more:hover,.four:hover,.div:hover,.ceroz:hover,
+.por:hover,.seven:hover,.eight:hover,.nine:hover,
+.six:hover,.punto:hover,.tre:hover,.two:hover,
+.one:hover,.zero:hover,.five:hover,.menos:hover,
+.more.focus,.four.focus,.div.focus,.ceroz.focus,
+.por.focus,.seven.focus,.eight.focus,.nine.focus,
+.six.focus,.punto.focus,.tre.focus,.two.focus,
+.one.focus,.zero.focus,.five.focus,.menos.focus{
+    background-color: #002273;
+}
+.zero.prueba{
+    background-color: palegoldenrod;
+}
+.clear{
+    grid-area: clear;
+    background-color: #ea5430;
+    cursor: pointer;
+}
+.clear:hover{
+    background-color: #e9431a;
+}
+.div{
+    grid-area: me;
+}
+.por{
+    grid-area: mi;
+}
+.alinea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color{
+    background-color: #003f9b;
+    cursor: pointer;
+}
